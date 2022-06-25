@@ -4,7 +4,8 @@ timezone: Asia/Seoul
 manage_etc_hosts: false
 users:
   - name: root
-    ssh-import-id: gh:aca
+    ssh_import_id:
+      - gh:aca
     lock_passwd: false
     shell: /bin/bash
   - name: ubuntu
@@ -13,7 +14,8 @@ users:
     home: /home/ubuntu
     shell: /bin/bash
     lock_passwd: false
-    ssh-import-id: gh:aca
+    ssh_import_id:
+      - gh:aca
 
 ssh_pwauth: false
 disable_root: false
